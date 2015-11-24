@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "CouchTuner Decoy Ad Remover",
+  "description": "This extension removes an object with id of hrthwg345eEl which gets placed in front of the video player",
+  "version": "0.1",
+  "content_scripts": [
+  {
+    "matches": ["http://allmyvideos.net/*"],
+    "js": ["jquery-2.1.4.min.js", "killAdDecoy.js"],
+       "all_frames": true,
+       "run_at": "document_idle"
+  }]
+}
